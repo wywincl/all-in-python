@@ -21,3 +21,10 @@ RUN pip install -U awscli
 # Install bs4 
 #=========================================
 RUN pip install -U beautifulsoup4
+
+#============
+# workspace
+#============
+RUN mkdir /etc/robot
+VOLUME /etc/robot
+WORKDIR /etc/robot
